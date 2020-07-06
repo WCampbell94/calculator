@@ -1,0 +1,91 @@
+body {
+	height: 500px;
+	width: 350px;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	background-color: crimson;
+}
+.calculator {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	border: 1px solid black;
+	border-bottom: none;
+	border-radius: 3px;
+}
+
+.screen {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	border-bottom: 0.5px solid black;
+	width: 100%;
+	height: 15%;
+	align-self: center;
+	padding: 5px 0px;
+	text-align: right;
+
+	background-color: orangered;
+}
+.calc-body {
+	height: 85%;
+	background-color: palegreen;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: stretch;
+}
+.functions {
+	height: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: orange;
+	justify-content: stretch;
+}
+.functions div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 17%;
+	border-bottom: 1px solid black;
+	text-align: center;
+	/* font-size: 1em; */
+}
+
+.functions div:hover {
+	background-color: coral;
+}
+
+.numbers {
+	flex: 3;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	background-color: #d3d3d3;
+	width: 200px;
+}
+
+.numbers div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border-radius: 2px; */
+	padding: 10px;
+	border-bottom: 0.5px solid black;
+	border-right: 0.5px solid black;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.numbers div:hover {
+	background-color: #f2f2f2;
+}
+
+#zero {
+	grid-column: 1 / span 2;
+}
